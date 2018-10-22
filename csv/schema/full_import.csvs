@@ -1,0 +1,38 @@
+version 1.1
+@totalColumns 17
+@ignoreColumnNameCase
+@separator ','
+// Company ID: internal company ID, e.g., group policy number.
+company_id: notEmpty
+// Company name: name of the company as it should appear on the platform.
+company_name: notEmpty
+// Employee ID: unique within company, e.g., policy number. Optional if email is present.
+employee_id: notEmpty or $email/notEmpty
+// Email: user's email address, optional.
+email: regex("^[\w!#$%&’*+/=?`{|}~^-]+(?:\.[\w!#$%&’*+/=?`{|}~^-]+)*@(?:[\p{L}a-z0-9-]+\.)+[a-z]{2,6}$") @ignoreCase @optional
+// User's first and last name, optional.
+first_name: @optional
+last_name: @optional
+// The dates must all be in ISO 8601 format (date part only), i.e., YYYY-MM-DD.
+// Validation on the dates is very basic to keep the regex simple here.
+// Activation date: when to activate the user's access
+activation_date: regex("^([0-9]{4})-(10|11|12|0[1-9])-(0[1-9]|[12][0-9]|3[01])$") @optional
+// Termination date: when to terminate the users's access, optional.
+termination_date: regex("^([0-9]{4})-(10|11|12|0[1-9])-(0[1-9]|[12][0-9]|3[01])$") @optional
+// Country code: user's country, 2 letter country code, uppercase, optional.
+country_code: regex("^[A-Z]{2}$") @optional
+// Locale: user's locale string in ISO/IEC 15897 format, e.g., en_GB, pt_BR, etc.
+locale: regex("^[a-z]{2}_[A-Z]{2}$") @optional
+// Job title, optional.
+job_title: @optional
+// Group: for companies that organise users into groups, can be left empty if not relevant.
+group: @optional
+// Gender: can be "male", "female" or "other", optional.
+gender: is("male") or is("female") or is("other") @ignoreCase @optional
+// phone, mobile and work: user's mobile and work phone number, both optional.
+phone_mobile: regex("^[0-9 +()-]+$") @optional
+phone_work: regex("^[0-9 +()-]+$") @optional
+// Birthday: user's date of birth, optional.
+birthday: regex("^([0-9]{4})-(10|11|12|0[1-9])-(0[1-9]|[12][0-9]|3[01])$") @optional
+// Work start date: when the employee started working for the company, optional.
+work_start: regex("^([0-9]{4})-(10|11|12|0[1-9])-(0[1-9]|[12][0-9]|3[01])$") @optional
