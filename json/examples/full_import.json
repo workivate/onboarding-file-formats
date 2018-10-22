@@ -1,0 +1,73 @@
+{
+  "$schema": "https://lifeworks.com/onboarding/json/v1/full_import.schema.json",
+  "users": [
+    {
+      "company_id": "CP1",
+      "company_name": "Company Name",
+      "employee_id": "1",
+      "group": "EU",
+      "country_code": "GB",
+      "locale": "en_GB",
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "job_title": "Director",
+      "birthday": "1980-10-11",
+      "activation_date": "2000-10-11",
+      "gender": "female",
+      "work_start": "2000-10-11",
+      "phone_mobile": "+441234567890",
+      "phone_work": "+441234567891"
+    },
+    {
+      "company_id": "CP1",
+      "company_name": "Company Name",
+      "employee_id": "2",
+      "email": "test.email2+xxxx1@example.com.anytld",
+      "group": "US-East",
+      "country_code": "US",
+      "first_name": "John",
+      "last_name": "Doe",
+      "job_title": "Director",
+      "birthday": "1980-10-11",
+      "gender": "male",
+      "work_start": "2011-12-19",
+      "phone_mobile": "+11234567890",
+      "phone_work": "+11234567890",
+      "activation_date": "2000-10-11",
+      "termination_date": "2020-10-11"
+    },
+    {
+      "company_id": "CP1",
+      "company_name": "Company Name",
+      "employee_id": "3",
+      "email": "",
+      "group": "EU",
+      "country_code": "HU",
+      "first_name": "János",
+      "last_name": "Kovács",
+      "birthday": "1919-09-30",
+      "gender": "other",
+      "work_start": "2011-12-19",
+      "phone_mobile": "",
+      "phone_work": "",
+      "activation_date": "2000-10-11"
+    },
+    {
+      "email": "email@fallback.test",
+      "company_id": "CP1",
+      "company_name": "Company Name",
+      "activation_date": "2020-01-01",
+      "group": "",
+      "country_code": "",
+      "first_name": "",
+      "last_name": "",
+      "job_title": "",
+      "birthday": "",
+      "gender": "",
+      "work_start": "",
+      "phone_mobile": "",
+      "phone_work": "",
+      "termination_date": ""
+    }
+  ]
+}

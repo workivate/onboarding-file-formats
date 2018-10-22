@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:users xmlns:xs="https://lifeworks.com/onboarding/xml/v1/Users"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://lifeworks.com/onboarding/xml/v1/Users ../schema/full_import.xsd">
+    <user>
+        <company_id>C12345</company_id>
+        <company_name>Name of the company</company_name>
+        <employee_id>1</employee_id>
+        <email>me@example.com</email>
+        <activation_date>2018-11-20</activation_date>
+        <first_name>Jane</first_name>
+        <last_name>Doe</last_name>
+        <country_code>GB</country_code>
+        <locale>en_GB</locale>
+        <gender>female</gender>
+        <job_title>Director</job_title>
+        <phone_mobile>+48747883322</phone_mobile>
+        <phone_work>+48747883322</phone_work>
+        <birthday>1919-09-30</birthday>
+        <work_start>2011-12-19</work_start>
+    </user>
+    <user>
+        <company_id>C12345</company_id>
+        <company_name>Name of the company</company_name>
+        <employee_id>2</employee_id>
+        <email>you@example.com</email>
+        <activation_date>2018-11-20</activation_date>
+        <termination_date>2020-11-20</termination_date>
+        <first_name>John</first_name>
+        <last_name>Doe</last_name>
+        <country_code>US</country_code>
+        <gender>male</gender>
+        <job_title>Director</job_title>
+        <phone_mobile>+48747883322</phone_mobile>
+        <phone_work>+48747883322</phone_work>
+        <birthday>1919-09-30</birthday>
+        <work_start>2011-12-19</work_start>
+    </user>
+    <user>
+        <company_id>C12345</company_id>
+        <company_name>Name of the company</company_name>
+        <employee_id>3</employee_id>
+        <email>someone@example.com</email>
+        <activation_date>2018-11-20</activation_date>
+        <first_name>János</first_name>
+        <last_name>Kovács</last_name>
+        <country_code>HU</country_code>
+        <gender>other</gender>
+        <group>IT</group>
+        <phone_mobile/>
+        <phone_work/>
+        <birthday>1919-09-30</birthday>
+        <work_start>2011-12-19</work_start>
+    </user>
+    <user>
+        <company_id>C12345</company_id>
+        <company_name>Name of the company</company_name>
+        <email>email@fallback.test</email>
+        <activation_date>2018-11-20</activation_date>
+        <first_name>  </first_name>
+        <last_name/>
+        <country_code>   </country_code>
+        <locale/>
+        <gender/>
+        <job_title/>
+        <phone_mobile>   </phone_mobile>
+        <phone_work/>
+        <birthday>   </birthday>
+        <work_start/>
+    </user>
+</xs:users>

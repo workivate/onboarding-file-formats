@@ -1,0 +1,208 @@
+{
+  "$id": "https://lifeworks.com/onboarding/json/v1/full_import.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "description": "Schema for a single onboarding JSON file that contains all users within all companies on the platform.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company_id": {
+            "description": "Internal company ID, e.g., group policy number, required.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 36
+          },
+          "company_name": {
+            "description": "Name of the company as it should appear on the platform, required.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "employee_id": {
+            "description": "Unique within company, e.g., policy number. Optional if email is present.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 36
+          },
+          "email": {
+            "$ref": "#/definitions/email/rfc-5322"
+          },
+          "activation_date": {
+            "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Required. Should be a future date.",
+            "type": "string",
+            "format": "date"
+          },
+          "termination_date": {
+            "description": "Date when account should be terminated in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
+            "type": "string",
+            "anyOf": [
+              {
+                "format": "date"
+              },
+              {
+                "maxLength": 0
+              }
+            ]
+          },
+          "group": {
+            "description": "Internal group to assign the user to, for companies that organise users into groups. Optional and can be left empty if not relevant.",
+            "type": "string",
+            "maxLength": 255
+          },
+          "country_code": {
+            "description": "User's country, 2 letter country code, uppercase, optional.",
+            "type": "string",
+            "anyOf": [
+              {
+                "pattern": "^[A-Z]{2}$",
+                "minLength": 1
+              },
+              {
+                "maxLength": 0
+              }
+            ]
+          },
+          "locale": {
+            "description": "User's locale string in ISO/IEC 15897 format, e.g., en_GB, pt_BR, etc. Optional.",
+            "type": "string",
+            "anyOf": [
+              {
+                "pattern": "^[a-z]{2}_[A-Z]{2}$",
+                "minLength": 1
+              },
+              {
+                "maxLength": 0
+              }
+            ]
+          },
+          "first_name": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "last_name": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "job_title": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "birthday": {
+            "description": "User's date of birth in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
+            "type": "string",
+            "anyOf": [
+              {
+                "format": "date"
+              },
+              {
+                "maxLength": 0
+              }
+            ]
+          },
+          "gender": {
+            "description": "Optional, can be empty or any of the following: male, female, other.",
+            "type": "string",
+            "enum": [
+              "",
+              "male",
+              "female",
+              "other"
+            ]
+          },
+          "work_start": {
+            "description": "Date when the employee started working for the company in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
+            "type": "string",
+            "anyOf": [
+              {
+                "format": "date"
+              },
+              {
+                "maxLength": 0
+              }
+            ]
+          },
+          "phone_mobile": {
+            "description": "User's mobile phone number, should be in international format, optional.",
+            "type": "string",
+            "maxLength": 255,
+            "anyOf": [
+              {
+                "pattern": "^[0-9 +()-]+$",
+                "minLength": 1
+              },
+              {
+                "maxLength": 0
+              }
+            ]
+          },
+          "phone_work": {
+            "description": "User's work phone number, should be in international format, optional.",
+            "type": "string",
+            "maxLength": 255,
+            "anyOf": [
+              {
+                "pattern": "^[0-9 +()-]+$",
+                "minLength": 1
+              },
+              {
+                "maxLength": 0
+              }
+            ]
+          }
+        },
+        "required": [
+          "company_id",
+          "company_name",
+          "activation_date"
+        ],
+        "anyOf": [
+          {
+            "description": "Email is required when employee_id is not present.",
+            "required": [
+              "email"
+            ],
+            "properties": {
+              "email": {
+                "minLength": 1
+              }
+            }
+          },
+          {
+            "description": "Email is optional when employee_id is present (default case).",
+            "required": [
+              "employee_id"
+            ]
+          }
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "users"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "email": {
+      "rfc-5322": {
+        "description": "User's email address as defined in RFC 5322, optional if employee_id is present.",
+        "type": "string",
+        "anyOf": [
+          {
+            "minLength": 1,
+            "pattern": "^(([^<>()\\[\\]\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\.,;:\\s@\"]+)*)|(\".+\"))@([A-Za-z0-9-]+\\.)+[a-zA-Z]{2,63}$"
+          },
+          {
+            "maxLength": 0
+          }
+        ]
+      }
+    }
+  }
+}
