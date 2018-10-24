@@ -30,7 +30,7 @@ There is an explanation on what fields to use with what kind of contents, as wel
  locale           | User locale                                          | ISO 3166-1 Country code and ISO 639-1 language code            | en_GB              | False                                |
  job_title        | Job title                                            | Text, Max length 255                                           | Sales manager      | False                                |
  group            | Group name to which user should be assigned          | Text, Max length 255                                           | HR, Sales          | False                                | Used only if grouping is enabled
- gender           | Gender                                               | Choice: female, male, other                                    | femal              | False                                | 
+ gender           | Gender                                               | Choice: female, male, other                                    | female             | False                                | 
  phone_mobile     | Mobile phone of the user                             | Phone number in international format                           | +447474747474      | False                                | 
  phone_work       | Work phone of the user                               | Phone number in international format                           | +447474747474      | False                                | 
  birthday         | User birth date                                      | Date in ISO 8601 format                                        | 2018-10-23         | False                                | 

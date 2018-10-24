@@ -19,7 +19,7 @@
         <birthday>1919-09-30</birthday>
         <work_start>2011-12-19</work_start>
     </user>
-     <user>
+    <user>
         <company_id>C12345</company_id>
         <company_name>Name of the company</company_name>
         <employee_id>2</employee_id>
@@ -51,5 +51,21 @@
         <phone_work/>
         <birthday>1919-09-30</birthday>
         <work_start>2011-12-19</work_start>
-    </user> 
+    </user>
+    <user>
+        <company_id>C12345</company_id>
+        <company_name>Name of the company</company_name>
+        <email>email@fallback.test</email>
+        <activation_date>2018-11-20</activation_date>
+        <first_name>  </first_name>
+        <last_name/>
+        <country_code>   </country_code>
+        <locale/>
+        <gender/>
+        <job_title/>
+        <phone_mobile>   </phone_mobile>
+        <phone_work/>
+        <birthday>   </birthday>
+        <work_start/>
+    </user>
 </xs:users>

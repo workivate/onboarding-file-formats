@@ -7,6 +7,7 @@
       "employee_id": "1",
       "group": "EU",
       "country_code": "GB",
+      "locale": "en_GB",
       "first_name": "Jane",
       "last_name": "Doe",
       "job_title": "Director",
@@ -14,8 +15,8 @@
       "activation_date": "2000-10-11",
       "gender": "female",
       "work_start": "2000-10-11",
-      "phone_mobile": "01234567890",
-      "phone_work": "01234567891"
+      "phone_mobile": "+441234567890",
+      "phone_work": "+441234567891"
     },
     {
       "company_id": "CP1",
@@ -30,8 +31,8 @@
       "birthday": "1980-10-11",
       "gender": "male",
       "work_start": "2011-12-19",
-      "phone_mobile": "555-1234-567890",
-      "phone_work": "555-1234-567891",
+      "phone_mobile": "+11234567890",
+      "phone_work": "+11234567890",
       "activation_date": "2000-10-11",
       "termination_date": "2020-10-11"
     },
@@ -50,6 +51,23 @@
       "phone_mobile": "",
       "phone_work": "",
       "activation_date": "2000-10-11"
+    },
+    {
+      "email": "email@fallback.test",
+      "company_id": "CP1",
+      "company_name": "Company Name",
+      "activation_date": "2020-01-01",
+      "group": "",
+      "country_code": "",
+      "first_name": "",
+      "last_name": "",
+      "job_title": "",
+      "birthday": "",
+      "gender": "",
+      "work_start": "",
+      "phone_mobile": "",
+      "phone_work": "",
+      "termination_date": ""
     }
   ]
 }
