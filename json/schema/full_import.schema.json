@@ -36,14 +36,7 @@
           "activation_date": {
             "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Required. Should be a future date.",
             "type": "string",
-            "anyOf": [
-              {
-                "format": "date"
-              },
-              {
-                "maxLength": 0
-              }
-            ]
+            "format": "date"
           },
           "termination_date": {
             "description": "Date when account should be terminated in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
