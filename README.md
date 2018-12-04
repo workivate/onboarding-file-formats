@@ -46,7 +46,7 @@ Those fields have a special meaning in our platform, and there is additional log
 
 **Termination date**:
  * can be edited only if current termination date is in future (account is still active)
- * activation date can be set only to future counting from midnight UTC on the day file has been sent for processing
+ * termination date can be set only to future counting from midnight UTC on the day file has been sent for processing
 
 ### Primary key
 
