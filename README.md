@@ -1,9 +1,8 @@
 # LifeWorks Automated Onboarding - Supported File formats
 
-The purpose of this repository is to provide assistance for producing valid input files for the onboarding process in a number of different formats. Currently the following input formats are supported:
-  * [Comma-separated values (CSV)](csv/)
-  * [JavaScript Object Notation (JSON)](json/)
-  * [Extensible Markup Language (XML)](xml/)
+The purpose of this repository is to provide assistance for producing valid input files for the onboarding process in a number of different formats. 
+
+Currently we support [Comma-separated values (CSV)](csv/) format, but [JavaScript Object Notation (JSON)](json/) and [Extensible Markup Language (XML)](xml/) is on the way.
   
 There is an explanation on what fields to use with what kind of contents, as well as examples, and schemas to validate an input file against. Although it is not guaranteed that an input file that is valid against the correct schema will be imported without errors, the schema validation can eliminate the vast majority of the potential errors so it could be a helpful part of the process.
 
