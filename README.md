@@ -52,3 +52,7 @@ Those fields have a special meaning in our platform, and there is additional log
 **User** - Our system supports two types of primary keys - `employee_id` and `email`, at least one of those fields must be present and not empty. Our system will first try to use `employee_id` and then tailback to `email` if value of `employee_id` is empty. You MUST always use same primary key for all records. Changing the primary key without separate agreements cannot be supported. A change in primary key may result in account duplication or permanent removal. 
 
 **Company** - Company is always identified by `company_id`.  `company_id` must not change, as that will trigger the removal of the existing network and creation of a new one.
+
+## User-only files
+
+There are schemas for user-only files as well. These schemas are named `user_import.*`. These are meant for validation of files that contain only employee records for a single company. The use case for these files is different to the full import. One use case is for example the file uploads in the admin panel where the company details will depend on which company's employee accounts is the user managing, so the company details come from another source and are not in the same scope as the data to be imported.

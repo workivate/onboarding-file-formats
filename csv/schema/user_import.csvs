@@ -1,11 +1,7 @@
 version 1.1
-@totalColumns 17
+@totalColumns 15
 @ignoreColumnNameCase
 @separator ','
-// Company ID: internal company ID, e.g., group policy number.
-company_id: notEmpty and length(1, 36)
-// Company name: name of the company as it should appear on the platform.
-company_name: notEmpty and length(1, 255)
 // Employee ID: unique within company, e.g., policy number. Optional if email is present.
 employee_id: notEmpty or $email/notEmpty and length(*, 36)
 // Email: user's email address, optional.

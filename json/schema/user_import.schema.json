@@ -1,7 +1,7 @@
 {
-  "$id": "https://lifeworks.com/onboarding/json/v1/full_import.schema.json",
+  "$id": "https://lifeworks.com/onboarding/json/v1/user_import.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "Schema for a single onboarding JSON file that contains all users within all companies on the platform.",
+  "description": "Schema for a user data JSON file to upload through the admin panel.",
   "type": "object",
   "properties": {
     "$schema": {
@@ -12,18 +12,6 @@
       "items": {
         "type": "object",
         "properties": {
-          "company_id": {
-            "description": "Internal company ID, e.g., group policy number, required.",
-            "type": "string",
-            "minLength": 1,
-            "maxLength": 36
-          },
-          "company_name": {
-            "description": "Name of the company as it should appear on the platform, required.",
-            "type": "string",
-            "minLength": 1,
-            "maxLength": 255
-          },
           "employee_id": {
             "description": "Unique within company, e.g., policy number. Optional if email is present.",
             "type": "string",
@@ -156,10 +144,6 @@
             ]
           }
         },
-        "required": [
-          "company_id",
-          "company_name"
-        ],
         "anyOf": [
           {
             "description": "Email is required when employee_id is not present.",
