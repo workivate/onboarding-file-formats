@@ -3,7 +3,7 @@
            xmlns="https://lifeworks.com/onboarding/xml/v1/Users"
            targetNamespace="https://lifeworks.com/onboarding/xml/v1/Users">
     <xs:annotation>
-        <xs:appinfo>Onboarding XML Schema - Full Import</xs:appinfo>
+        <xs:appinfo>Onboarding XML Schema - User Import</xs:appinfo>
         <xs:documentation xml:lang="en">
             Schema for a user data XML file to upload through the admin panel.
         </xs:documentation>
