@@ -129,15 +129,9 @@
           },
           "phone_mobile": {
             "description": "User's mobile phone number, should be in international format, optional.",
-            "type": "string",
-            "maxLength": 255,
-            "anyOf": [
+            "allOf": [
               {
-                "pattern": "^[0-9 +()-]+$",
-                "minLength": 1
-              },
-              {
-                "maxLength": 0
+                "$ref": "#/definitions/phoneNumber"
               }
             ]
           },
@@ -145,13 +139,9 @@
             "description": "User's work phone number, should be in international format, optional.",
             "type": "string",
             "maxLength": 255,
-            "anyOf": [
+            "allOf": [
               {
-                "pattern": "^[0-9 +()-]+$",
-                "minLength": 1
-              },
-              {
-                "maxLength": 0
+                "$ref": "#/definitions/phoneNumber"
               }
             ]
           }
@@ -202,6 +192,11 @@
           }
         ]
       }
+    },
+    "phoneNumber": {
+      "type": "string",
+      "maxLength": 255,
+      "pattern": "^[0-9 +()x./-]*$"
     }
   }
 }

@@ -29,8 +29,8 @@ group: length(*, 255) @optional
 // Gender: can be "male", "female" or "other", optional.
 gender: is("male") or is("female") or is("other") @ignoreCase @optional
 // Phone, mobile and work: user's mobile and work phone number, both optional.
-phones_mobile: regex("^[0-9 +()-]+$") and length(*, 255) @optional
-phones_work: regex("^[0-9 +()-]+$") and length(*, 255) @optional
+phones_mobile: regex("^[0-9 +()x./-]+$") and length(*, 255) @optional
+phones_work: regex("^[0-9 +()x./-]+$") and length(*, 255) @optional
 // Birthday: user's date of birth, optional.
 birthday: xDate @optional
 // Work start date: when the employee started working for the company, optional.
