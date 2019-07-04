@@ -82,7 +82,7 @@
     </xs:simpleType>
     <xs:simpleType name="phoneNumber">
         <xs:restriction base="optionalString">
-            <xs:pattern value="\s*|[0-9 +()-]+"/>
+            <xs:pattern value="\s*|[0-9 +()x./-]+"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:complexType name="userElement">
