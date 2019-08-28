@@ -11,7 +11,6 @@ There is an explanation on what fields to use with what kind of contents, as wel
 * Files should have one of the following extensions: (xml, json, csv) indicating its format
 * File should always contain ALL user records (including inactive/terminated users)
 * Files should be added as new files and should not overwrite existing files held on the SFTP, therefore we recommend using a date & timestamp in the filename generation process
-* If a user file was previously uploaded through https://admin.lifeworks.com then the same property names can be used in the SFTP file, or the header row can be omitted entirely if the file is a CSV. New properties can be added by using the pre-defined name below or by uploading a new file in the admin panel to update the property mapping preferences.
 
 ## Properties
 
