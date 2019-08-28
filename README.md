@@ -10,15 +10,15 @@ There is an explanation on what fields to use with what kind of contents, as wel
 * All files regardless of the file format must be UTF-8 encoded without BOM
 * Files should have one of the following extensions: (xml, json, csv) indicating its format
 * File should always contain ALL user records (including inactive/terminated users)
-* Records in file should be sorted by `company_id` and then User primary key field (either `employee_id` or `email`)
 * Files should be added as new files and should not overwrite existing files held on the SFTP, therefore we recommend using a date & timestamp in the filename generation process
+* If a user file was previously uploaded through https://admin.lifeworks.com then the same property names can be used in the SFTP file, or the header row can be omitted entirely if the file is a CSV. New properties can be added by using the pre-defined name below or by uploading a new file in the admin panel to update the property mapping preferences.
 
 ## Properties
 
  Property         | Description                                          | Format                                                         | Examples           | Required                             | Notes
 ----------------- | ---------------------------------------------------- | ---------------------------------------------------------------| ------------------ | ------------------------------------ | --------------------------------
- company_id       | Unique company identifier                            | Text, Max length 36                                            | C121523245         | True                                 |
- company_name     | Name of the Company as it should appear on platform  | Text, Max length 255                                           | Example Inc        | True                                 |
+ company_id       | Unique company identifier                            | Text, Max length 36                                            | C121523245         | True, if it is not a user-only file  |
+ company_name     | Name of the Company as it should appear on platform  | Text, Max length 255                                           | Example Inc        | True, if it is not a user-only file  |
  employee_id      | Unique Employee Id                                   | Text, Max length 36                                            | EID123456          | True, if User email address is empty |
  email            | User email address                                   | Email address as defined in RFC 5322                           | email@example.com  | True, if Unique Employee Id is empty |
  first_name       | User first name                                      | Text, Max length 255                                           | Jon                | False                                |
@@ -55,4 +55,4 @@ Those fields have a special meaning in our platform, and there is additional log
 
 ## User-only files
 
-There are schemas for user-only files as well. These schemas are named `user_import.*`. These are meant for validation of files that contain only employee records for a single company. The use case for these files is different to the full import. One use case is for example the file uploads in the admin panel where the company details will depend on which company's employee accounts is the user managing, so the company details come from another source and are not in the same scope as the data to be imported.
+The schemas for user-only files are named `user_import.*`. These are meant for validation of files that contain only employee records for a single company, so the `company_id` and `company_name` properties are not applicable in this case and should not be in the file.
