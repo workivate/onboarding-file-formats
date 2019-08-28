@@ -11,29 +11,28 @@ There is an explanation on what fields to use with what kind of contents, as wel
 * Files should have one of the following extensions: (xml, json, csv) indicating its format
 * File should always contain ALL user records (including inactive/terminated users)
 * Files should be added as new files and should not overwrite existing files held on the SFTP, therefore we recommend using a date & timestamp in the filename generation process
-* If a user file was previously uploaded through https://admin.lifeworks.com then the same property names can be used in the SFTP file, or the header row can be omitted entirely if the file is a CSV. New properties can be added by using the pre-defined name below or by uploading a new file in the admin panel to update the property mapping preferences.
 
 ## Properties
 
- Property         | Description                                          | Format                                                         | Examples           | Required                             | Notes
------------------ | ---------------------------------------------------- | ---------------------------------------------------------------| ------------------ | ------------------------------------ | --------------------------------
- company_id       | Unique company identifier                            | Text, Max length 36                                            | C121523245         | True, if it is not a user-only file  |
- company_name     | Name of the Company as it should appear on platform  | Text, Max length 255                                           | Example Inc        | True, if it is not a user-only file  |
- employee_id      | Unique Employee Id                                   | Text, Max length 36                                            | EID123456          | True, if User email address is empty |
- email            | User email address                                   | Email address as defined in RFC 5322                           | email@example.com  | True, if Unique Employee Id is empty |
- first_name       | User first name                                      | Text, Max length 255                                           | Jon                | False                                |
- last_name        | User Last name                                       | Text, Max length 255                                           | Doe                | False                                |
- activation_date  | User activation date                                 | Date from which account should be active in ISO 8601 format    | 2018-10-23         | False                                | Default current date if empty
- termination_date | User termination date                                | Date on which account should be terminated in ISO 8601 format  | 2020-10-23         | False                                |
- country_code     | User country code                                    | 2 letters ISO 3166-1 country code                              | GB                 | False                                |
- locale           | User locale                                          | ISO 3166-1 Country code and ISO 639-1 language code            | en_GB              | False                                |
- job_title        | Job title                                            | Text, Max length 255                                           | Sales manager      | False                                |
- group            | Group name to which user should be assigned          | Text, Max length 255                                           | HR, Sales          | False                                | Used only if grouping is enabled
- gender           | Gender                                               | Choice: female, male, other                                    | female             | False                                | 
- phone_mobile     | Mobile phone of the user                             | Phone number in international format                           | +447474747474      | False                                | 
- phone_work       | Work phone of the user                               | Phone number in international format                           | +447474747474      | False                                | 
- birthday         | User birth date                                      | Date in ISO 8601 format                                        | 2018-10-23         | False                                | 
- work_start       | User employment start date                           | Date in ISO 8601 format                                        | 2018-10-23         | False                                | 
+ Property         | Description                                          | Format                                                         | Examples           | Originator import required           | User only import required            | Notes
+----------------- | ---------------------------------------------------- | ---------------------------------------------------------------| ------------------ | ------------------------------------ | ------------------------------------ | --------------------------------
+ company_id       | Unique company identifier                            | Text, Max length 36                                            | C121523245         | True                                 | False                                |
+ company_name     | Name of the Company as it should appear on platform  | Text, Max length 255                                           | Example Inc        | True                                 | False                                |
+ employee_id      | Unique Employee Id                                   | Text, Max length 36                                            | EID123456          | True, if User email address is empty | True, if User email address is empty |
+ email            | User email address                                   | Email address as defined in RFC 5322                           | email@example.com  | True, if Unique Employee Id is empty | True, if Unique Employee Id is empty |
+ first_name       | User first name                                      | Text, Max length 255                                           | Jon                | False                                | False                                |
+ last_name        | User Last name                                       | Text, Max length 255                                           | Doe                | False                                | False                                |
+ activation_date  | User activation date                                 | Date from which account should be active in ISO 8601 format    | 2018-10-23         | False                                | False                                | Default current date if empty
+ termination_date | User termination date                                | Date on which account should be terminated in ISO 8601 format  | 2020-10-23         | False                                | False                                |
+ country_code     | User country code                                    | 2 letters ISO 3166-1 country code                              | GB                 | False                                | False                                |
+ locale           | User locale                                          | ISO 3166-1 Country code and ISO 639-1 language code            | en_GB              | False                                | False                                |
+ job_title        | Job title                                            | Text, Max length 255                                           | Sales manager      | False                                | False                                |
+ group            | Group name to which user should be assigned          | Text, Max length 255                                           | HR, Sales          | False                                | False                                | Used only if grouping is enabled
+ gender           | Gender                                               | Choice: female, male, other                                    | female             | False                                | False                                | 
+ phone_mobile     | Mobile phone of the user                             | Phone number in international format                           | +447474747474      | False                                | False                                |
+ phone_work       | Work phone of the user                               | Phone number in international format                           | +447474747474      | False                                | False                                | 
+ birthday         | User birth date                                      | Date in ISO 8601 format                                        | 2018-10-23         | False                                | False                                | 
+ work_start       | User employment start date                           | Date in ISO 8601 format                                        | 2018-10-23         | False                                | False                                | 
 
 
 ### Activation and termination dates
