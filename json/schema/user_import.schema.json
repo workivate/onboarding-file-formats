@@ -13,18 +13,24 @@
         "type": "object",
         "properties": {
           "employee_id": {
-            "description": "Unique within company, e.g., policy number. Optional if email is present.",
+            "description": "Unique within company, e.g., policy number. Required if this feature is enabled for the company.",
             "type": "string",
-            "minLength": 1,
             "maxLength": 36
           },
           "email": {
             "$ref": "#/definitions/email/rfc-5322"
           },
           "activation_date": {
-            "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Required. Should be a future date.",
+            "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
-            "format": "date"
+            "anyOf": [
+              {
+                "format": "date"
+              },
+              {
+                "maxLength": 0
+              }
+            ]
           },
           "termination_date": {
             "description": "Date when account should be terminated in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
@@ -132,25 +138,6 @@
             ]
           }
         },
-        "anyOf": [
-          {
-            "description": "Email is required when employee_id is not present.",
-            "required": [
-              "email"
-            ],
-            "properties": {
-              "email": {
-                "minLength": 1
-              }
-            }
-          },
-          {
-            "description": "Email is optional when employee_id is present (default case).",
-            "required": [
-              "employee_id"
-            ]
-          }
-        ],
         "additionalProperties": false
       }
     }
@@ -162,7 +149,7 @@
   "definitions": {
     "email": {
       "rfc-5322": {
-        "description": "User's email address as defined in RFC 5322, optional if employee_id is present.",
+        "description": "User's email address as defined in RFC 5322, optional if the company uses employee_id.",
         "type": "string",
         "anyOf": [
           {
