@@ -2,9 +2,9 @@ version 1.1
 @totalColumns 15
 @ignoreColumnNameCase
 @separator ','
-// Employee ID: unique within company, e.g., policy number. Optional if email is present.
-employee_id: notEmpty or $email/notEmpty and length(*, 36)
-// Email: user's email address, optional.
+// Employee ID: unique within company, e.g., policy number. Required if this feature is enabled for the company.
+employee_id: length(*, 36) @optional
+// Email: user's email address, optional if the company uses employee_id.
 email: regex("^[\w!#$%&’*+/=?`{|}~^-]+(?:\.[\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-z0-9-]+\.)+[a-z]{2,63}$") @ignoreCase @optional
 // User's first and last name, optional.
 first_name: length(*, 255) @optional
