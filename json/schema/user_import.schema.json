@@ -52,28 +52,14 @@
           "country_code": {
             "description": "User's country, 2 letter country code, uppercase, optional.",
             "type": "string",
-            "anyOf": [
-              {
-                "pattern": "^[A-Z]{2}$",
-                "minLength": 1
-              },
-              {
-                "maxLength": 0
-              }
-            ]
+            "pattern": "^[A-Z]{2}$",
+            "minLength": 1
           },
           "locale": {
             "description": "User's locale string in ISO/IEC 15897 format, e.g., en_GB, pt_BR, etc. Optional.",
             "type": "string",
-            "anyOf": [
-              {
-                "pattern": "^[a-z]{2}_[A-Z]{2}$",
-                "minLength": 1
-              },
-              {
-                "maxLength": 0
-              }
-            ]
+            "pattern": "^[a-z]{2}_[A-Z]{2}$",
+            "minLength": 1
           },
           "first_name": {
             "type": "string",
