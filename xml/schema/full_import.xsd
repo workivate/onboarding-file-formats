@@ -104,6 +104,30 @@
             <xs:element name="phone_work" type="phoneNumber" minOccurs="0"/>
             <xs:element name="birthday" type="optionalDate" minOccurs="0"/>
             <xs:element name="work_start" type="optionalDate" minOccurs="0"/>
+            <xs:element name="region" type="optionalString" minOccurs="0"/>
+            <xs:element name="sub_region" type="optionalString" minOccurs="0"/>
+            <xs:element name="city" type="optionalString" minOccurs="0"/>
+            <xs:element name="location_site" type="optionalString" minOccurs="0"/>
+            <xs:element name="work_status" type="optionalString" minOccurs="0"/>
+            <xs:element name="management_status" type="optionalString" minOccurs="0"/>
+            <xs:element name="job_level" type="optionalString" minOccurs="0"/>
+            <xs:element name="division" type="optionalString" minOccurs="0"/>
+            <xs:element name="division_sub1" type="optionalString" minOccurs="0"/>
+            <xs:element name="division_sub2" type="optionalString" minOccurs="0"/>
+            <xs:element name="division_sub3" type="optionalString" minOccurs="0"/>
+            <xs:element name="division_sub4" type="optionalString" minOccurs="0"/>
+            <xs:element name="division_sub5" type="optionalString" minOccurs="0"/>
+            <xs:element name="occupation" type="optionalString" minOccurs="0"/>
+            <xs:element name="union_status" type="optionalString" minOccurs="0"/>
+            <xs:element name="pay_type" type="optionalString" minOccurs="0"/>
+            <xs:element name="salary" type="optionalString" minOccurs="0"/>
+            <xs:element name="preferred_language" type="optionalString" minOccurs="0"/>
+            <xs:element name="custom_cut1" type="optionalString" minOccurs="0"/>
+            <xs:element name="custom_cut2" type="optionalString" minOccurs="0"/>
+            <xs:element name="custom_cut3" type="optionalString" minOccurs="0"/>
+            <xs:element name="custom_cut4" type="optionalString" minOccurs="0"/>
+            <xs:element name="custom_cut5" type="optionalString" minOccurs="0"/>
+            <xs:element name="sso" type="optionalString" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="users">
