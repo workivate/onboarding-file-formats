@@ -130,6 +130,123 @@
                 "$ref": "#/definitions/phoneNumber"
               }
             ]
+          },
+          "region": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Region of work of the individual"
+          },
+          "sub_region": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Sub region of work of the individual"
+          },
+          "city": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "City of work of the individual"
+          },
+          "location_site": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Location or site out of which the individual works"
+          },
+          "work_status": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Work status of the individual (e.g. Active, STD, LTD, leave, terminated, etc)"
+          },
+          "management_status": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Designation of whether or not the person manages individuals"
+          },
+          "job_level": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "division": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Highest level department/division/group of the individual"
+          },
+          "division_sub1": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Second highest level department/division/group of the individual"
+          },
+          "division_sub2": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Third highest level department/division/group of the individual"
+          },
+          "division_sub3": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Fourth highest level department/division/group of the individual"
+          },
+          "division_sub4": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "division_sub5": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "occupation": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Occupation of the individual"
+          },
+          "union_status": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Union status of the individual (e.g. union, non-union)"
+          },
+          "pay_type": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Pay type of the individual (e.g. hourly, salary, commission)"
+          },
+          "salary": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Salary of the individual"
+          },
+          "preferred_language": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Preferred language of communication for the individual (e.g. English, French, German, etc)"
+          },
+          "custom_cut1": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "First custom demographic field of  the individual (unique to the organization)"
+          },
+          "custom_cut2": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Second custom demographic field of  the individual (unique to the organization)"
+          },
+          "custom_cut3": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Third custom demographic field of  the individual (unique to the organization)"
+          },
+          "custom_cut4": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Fourth custom demographic field of  the individual (unique to the organization)"
+          },
+          "custom_cut5": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Fifth custom demographic field of  the individual (unique to the organization)"
+          },
+          "sso": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Indicates whether the user should be accessing by SSO or not"
           }
         },
         "required": [
