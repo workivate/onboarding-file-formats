@@ -35,3 +35,48 @@ phones_work: regex("^[0-9 +()x./-]+$") and length(*, 255) @optional
 birthday: xDate @optional
 // Work start date: when the employee started working for the company, optional.
 work_start: xDate @optional
+// Region of work of the individual
+region: length(*, 255) @optional
+// Sub region of work of the individual
+sub_region: length(*, 255) @optional
+// City of work of the individual
+city: length(*, 255) @optional
+// Location or site out of which the individual works
+location_site: length(*, 255) @optional
+// Work status of the individual (e.g. Active, STD, LTD, leave, terminated, etc)
+work_status: length(*, 255) @optional
+// Designation of whether or not the person manages individuals
+management_status: length(*, 255) @optional
+job_level: length(*, 255) @optional
+// Highest level department/division/group of the individual
+division: length(*, 255) @optional
+// Second highest level department/division/group of the individual
+division_sub1: length(*, 255) @optional
+// Third highest level department/division/group of the individual
+division_sub2: length(*, 255) @optional
+// Fourth highest level department/division/group of the individual
+division_sub3: length(*, 255) @optional
+division_sub4: length(*, 255) @optional
+division_sub5: length(*, 255) @optional
+// Occupation of the individual
+occupation: length(*, 255) @optional
+// Union status of the individual (e.g. union, non-union)
+union_status: length(*, 255) @optional
+// Pay type of the individual (e.g. hourly, salary, commission)
+pay_type: length(*, 255) @optional
+// Salary of the individual
+salary: length(*, 255) @optional
+// Preferred language of communication for the individual (e.g. English, French, German, etc)
+preferred_language: length(*, 255) @optional
+// First custom demographic field of  the individual (unique to the organization)
+custom_cut1: length(*, 255) @optional
+// Second custom demographic field of  the individual (unique to the organization)
+custom_cut2: length(*, 255) @optional
+// Third custom demographic field of  the individual (unique to the organization)
+custom_cut3: length(*, 255) @optional
+// Fourth custom demographic field of  the individual (unique to the organization)
+custom_cut4: length(*, 255) @optional
+// Fifth custom demographic field of  the individual (unique to the organization)
+custom_cut5: length(*, 255) @optional
+// Indicates whether the user should be accessing by SSO or not
+sso: length(*, 255) @optional
