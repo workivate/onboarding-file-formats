@@ -18,6 +18,30 @@
         <phone_work>+48747883322</phone_work>
         <birthday>1919-09-30</birthday>
         <work_start>2011-12-19</work_start>
+        <region />
+        <sub_region />
+        <city />
+        <location_site />
+        <work_status />
+        <management_status />
+        <job_level />
+        <division />
+        <division_sub1 />
+        <division_sub2 />
+        <division_sub3 />
+        <division_sub4 />
+        <division_sub5 />
+        <occupation />
+        <union_status />
+        <pay_type />
+        <salary />
+        <preferred_language />
+        <custom_cut1 />
+        <custom_cut2 />
+        <custom_cut3 />
+        <custom_cut4 />
+        <custom_cut5 />
+        <sso />
     </user>
     <user>
         <company_id>C12345</company_id>
@@ -35,6 +59,30 @@
         <phone_work>+48747883322</phone_work>
         <birthday>1919-09-30</birthday>
         <work_start>2011-12-19</work_start>
+        <region />
+        <sub_region />
+        <city />
+        <location_site />
+        <work_status />
+        <management_status />
+        <job_level />
+        <division />
+        <division_sub1 />
+        <division_sub2 />
+        <division_sub3 />
+        <division_sub4 />
+        <division_sub5 />
+        <occupation />
+        <union_status />
+        <pay_type />
+        <salary />
+        <preferred_language />
+        <custom_cut1 />
+        <custom_cut2 />
+        <custom_cut3 />
+        <custom_cut4 />
+        <custom_cut5 />
+        <sso />
     </user>
     <user>
         <company_id>C12345</company_id>
@@ -51,6 +99,30 @@
         <phone_work/>
         <birthday>1919-09-30</birthday>
         <work_start>2011-12-19</work_start>
+        <region />
+        <sub_region />
+        <city />
+        <location_site />
+        <work_status />
+        <management_status />
+        <job_level />
+        <division />
+        <division_sub1 />
+        <division_sub2 />
+        <division_sub3 />
+        <division_sub4 />
+        <division_sub5 />
+        <occupation />
+        <union_status />
+        <pay_type />
+        <salary />
+        <preferred_language />
+        <custom_cut1 />
+        <custom_cut2 />
+        <custom_cut3 />
+        <custom_cut4 />
+        <custom_cut5 />
+        <sso />
     </user>
     <user>
         <company_id>C12345</company_id>
@@ -65,5 +137,29 @@
         <phone_work/>
         <birthday>   </birthday>
         <work_start/>
+        <region />
+        <sub_region />
+        <city />
+        <location_site />
+        <work_status />
+        <management_status />
+        <job_level />
+        <division />
+        <division_sub1 />
+        <division_sub2 />
+        <division_sub3 />
+        <division_sub4 />
+        <division_sub5 />
+        <occupation />
+        <union_status />
+        <pay_type />
+        <salary />
+        <preferred_language />
+        <custom_cut1 />
+        <custom_cut2 />
+        <custom_cut3 />
+        <custom_cut4 />
+        <custom_cut5 />
+        <sso />
     </user>
 </xs:users>
