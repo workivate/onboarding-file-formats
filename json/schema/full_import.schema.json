@@ -247,6 +247,12 @@
             "type": "string",
             "maxLength": 255,
             "description": "Indicates whether the user should be accessing by SSO or not"
+          },
+          "roles": {
+            "type": "string",
+            "maxLength": 255,
+            "pattern": "^(admin|super_admin|user|,)*$",
+            "description": "Set of roles for user (strings comma-separated)"
           }
         },
         "required": [
