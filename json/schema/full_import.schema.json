@@ -254,25 +254,6 @@
             "description": "Indicates whether the user should be accessing by SSO or not"
           }
         },
-        "anyOf": [
-          {
-            "description": "Email is required when employee_id is not present.",
-            "required": [
-              "email"
-            ],
-            "properties": {
-              "email": {
-                "minLength": 1
-              }
-            }
-          },
-          {
-            "description": "Email is optional when employee_id is present (default case).",
-            "required": [
-              "employee_id"
-            ]
-          }
-        ],
         "additionalProperties": false
       }
     }
