@@ -13,16 +13,21 @@
         "type": "object",
         "properties": {
           "company_id": {
-            "description": "Internal company ID, e.g., group policy number, required.",
+            "description": "Internal company ID, e.g., group policy number, required if no company_internal_id.",
             "type": "string",
             "minLength": 1,
             "maxLength": 36
           },
           "company_name": {
-            "description": "Name of the company as it should appear on the platform, required.",
+            "description": "Name of the company as it should appear on the platform, required if no company_internal_id.",
             "type": "string",
             "minLength": 1,
             "maxLength": 255
+          },
+          "company_internal_id": {
+            "description": "Internal company ID.",
+            "type": "string",
+            "pattern": "^[0-9a-z]{24}$"
           },
           "employee_id": {
             "description": "Unique within company, e.g., policy number. Optional if email is present.",
@@ -249,10 +254,6 @@
             "description": "Indicates whether the user should be accessing by SSO or not"
           }
         },
-        "required": [
-          "company_id",
-          "company_name"
-        ],
         "anyOf": [
           {
             "description": "Email is required when employee_id is not present.",
