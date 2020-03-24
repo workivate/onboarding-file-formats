@@ -123,8 +123,7 @@
               }
             ]
           }
-        },
-        "additionalProperties": false
+        }
       }
     }
   },
