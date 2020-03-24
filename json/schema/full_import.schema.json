@@ -259,8 +259,7 @@
             "pattern": "^(admin|super_admin|user|,)*$",
             "description": "Set of roles for user (strings comma-separated)"
           }
-        },
-        "additionalProperties": false
+        }
       }
     }
   },

@@ -1,5 +1,4 @@
 version 1.1
-@totalColumns 15
 @ignoreColumnNameCase
 @separator ','
 // Employee ID: unique within company, e.g., policy number. Required if this feature is enabled for the company.
