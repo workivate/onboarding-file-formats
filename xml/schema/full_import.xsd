@@ -10,12 +10,12 @@
     </xs:annotation>
     <xs:simpleType name="countryCode">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[A-Z]{2}"/>
+            <xs:pattern value="\s*|[A-Z]{2}"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="locale">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[a-z]{2}_[A-Z]{2}"/>
+            <xs:pattern value="\s*|[a-z]{2}_[A-Z]{2}"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="emailRFC5322">
