@@ -65,8 +65,7 @@
             "type": "string",
             "anyOf": [
               {
-                "pattern": "^[A-Z]{2}$",
-                "minLength": 1
+                "pattern": "^[A-Z]{2}$"
               },
               {
                 "maxLength": 0
@@ -78,8 +77,7 @@
             "type": "string",
             "anyOf": [
               {
-                "pattern": "^[a-z]{2}_[A-Z]{2}$",
-                "minLength": 1
+                "pattern": "^[a-z]{2}_[A-Z]{2}$"
               },
               {
                 "maxLength": 0
