@@ -134,6 +134,11 @@
                 "$ref": "#/definitions/phoneNumber"
               }
             ]
+          },
+          "otp": {
+            "type": "string",
+            "maxLength": 32,
+            "pattern": "^[a-zA-Z0-9]*$"
           }
         }
       }

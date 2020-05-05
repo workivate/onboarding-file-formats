@@ -270,6 +270,11 @@
             "maxLength": 255,
             "pattern": "^(admin|super_admin|user|,)*$",
             "description": "Set of roles for user (strings comma-separated)"
+          },
+          "otp": {
+            "type": "string",
+            "maxLength": 32,
+            "pattern": "^[a-zA-Z0-9]*$"
           }
         }
       }
