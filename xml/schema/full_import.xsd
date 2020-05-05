@@ -92,7 +92,7 @@
     </xs:simpleType>
     <xs:simpleType name="otp">
         <xs:restriction base="xs:string">
-            <xs:maxLength value="36"/>
+            <xs:maxLength value="32"/>
             <xs:pattern value="\s*|[a-zA-Z0-9]*"/>
         </xs:restriction>
     </xs:simpleType>
