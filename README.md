@@ -57,6 +57,7 @@ There is an explanation on what fields to use with what kind of contents, as wel
  custom_cut4        | Fourth custom demographic field of  the individual (unique to the organization) | Text, Max length 255                                           | 31Wing                                                                         | False                                | False                                |                              
  custom_cut5        | Fifth custom demographic field of  the individual (unique to the organization)  | Text, Max length 255                                           | Could be anything                                                              | False                                | False                                |                              
  sso                | Indicates whether the user should be accessing by SSO or not                    | Text, Max length 255                                           | Could be anything                                                              | False                                | False                                |                              
+ roles              | Set of user roles                                                               | Text, Max length 255, comma-separated                          | "admin,user"                                                                   | False                                | False                                | If more than 1 role -> string in "" to escape comma
                              
 
 
