@@ -79,6 +79,12 @@
             <xs:pattern value="\s*|[0-9 +()x./-]+"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="otp">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:pattern value="\s*|[a-zA-Z0-9]*"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="userElement">
         <xs:sequence>
             <xs:element name="employee_id" type="optionalID" minOccurs="0"/>
@@ -96,6 +102,7 @@
             <xs:element name="phone_work" type="phoneNumber" minOccurs="0"/>
             <xs:element name="birthday" type="optionalDate" minOccurs="0"/>
             <xs:element name="work_start" type="optionalDate" minOccurs="0"/>
+            <xs:element name="otp" type="otp" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="users">

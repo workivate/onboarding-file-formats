@@ -90,6 +90,12 @@
             <xs:pattern value="(admin|super_admin|user|,)*"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="otp">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:pattern value="\s*|[a-zA-Z0-9]*"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="userElement">
         <xs:sequence>
             <xs:element name="company_id" type="requiredID"/>
@@ -134,6 +140,7 @@
             <xs:element name="custom_cut5" type="optionalString" minOccurs="0"/>
             <xs:element name="sso" type="optionalString" minOccurs="0"/>
             <xs:element name="roles" type="rolesType" minOccurs="0"/>
+            <xs:element name="otp" type="otp" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="users">

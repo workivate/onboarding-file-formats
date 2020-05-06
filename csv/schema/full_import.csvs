@@ -81,3 +81,5 @@ custom_cut5: length(*, 255) @optional
 sso: length(*, 255) @optional
 // Set of user roles, comma-separated
 roles: length(*, 255) and regex("^(admin|super_admin|user|,)*$") @optional
+// One time password, provided by employer, which later has to be verified by employee
+otp: regex("^[a-zA-Z0-9]*$") and length(*, 32) @optional

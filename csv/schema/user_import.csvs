@@ -30,3 +30,5 @@ phones_work: regex("^[0-9 +()x./-]*$") and length(*, 255) @optional
 birthday: xDate @optional
 // Work start date: when the employee started working for the company, optional.
 work_start: xDate @optional
+// One time password, provided by employer, which later has to be verified by employee
+otp: regex("^[a-zA-Z0-9]*$") and length(*, 32) @optional
