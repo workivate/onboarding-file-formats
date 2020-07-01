@@ -2,13 +2,13 @@
 
 The purpose of this repository is to provide assistance for producing valid input files for the onboarding process in a number of different formats. 
 
-Currently we support [Comma-separated values (CSV)](csv/) format, but [JavaScript Object Notation (JSON)](json/) and [Extensible Markup Language (XML)](xml/) is on the way.
+Currently we only support the [Comma-separated values (CSV)](csv/) format.
   
 There is an explanation on what fields to use with what kind of contents, as well as examples, and schemas to validate an input file against. Although it is not guaranteed that an input file that is valid against the correct schema will be imported without errors, the schema validation can eliminate the vast majority of the potential errors so it could be a helpful part of the process.
 
 ## File requirements
-* All files regardless of the file format must be UTF-8 encoded without BOM
-* Files should have one of the following extensions: (xml, json, csv) indicating its format
+* All files regardless of the file format must be UTF-8 encoded
+* Files must have `.csv` extension indicating their format
 * File should always contain ALL user records (including inactive/terminated users)
 * Files should be added as new files and should not overwrite existing files held on the SFTP, therefore we recommend using a date & timestamp in the filename generation process
 
