@@ -274,6 +274,7 @@
           "otp": {
             "type": "string",
             "maxLength": 32,
+            "minLength": 5,
             "pattern": "^[a-zA-Z0-9]*$"
           }
         }
