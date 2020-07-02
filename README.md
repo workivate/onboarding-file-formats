@@ -2,7 +2,7 @@
 
 The purpose of this repository is to provide assistance for producing valid input files for the onboarding process in a number of different formats. 
 
-Currently we only support the [Comma-separated values (CSV)](csv/) format.
+Currently we only support the Comma-separated values (CSV) format. You can access schemas and example files [here](csv/).
   
 There is an explanation on what fields to use with what kind of contents, as well as examples, and schemas to validate an input file against. Although it is not guaranteed that an input file that is valid against the correct schema will be imported without errors, the schema validation can eliminate the vast majority of the potential errors so it could be a helpful part of the process.
 
