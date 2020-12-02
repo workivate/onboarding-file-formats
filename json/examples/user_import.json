@@ -14,7 +14,8 @@
       "gender": "female",
       "work_start": "2000-10-11",
       "phone_mobile": "+441234567890",
-      "phone_work": "+441234567891"
+      "phone_work": "+441234567891",
+      "invitecode": "1#801011"
     },
     {
       "employee_id": "2",
@@ -30,7 +31,8 @@
       "phone_mobile": "+11234567890",
       "phone_work": "+11234567890",
       "activation_date": "2000-10-11",
-      "termination_date": "2020-10-11"
+      "termination_date": "2020-10-11",
+      "invitecode": "2#801011"
     },
     {
       "employee_id": "3",
@@ -44,7 +46,8 @@
       "work_start": "2011-12-19",
       "phone_mobile": "",
       "phone_work": "",
-      "activation_date": "2000-10-11"
+      "activation_date": "2000-10-11",
+      "invitecode": "3#190930"
     }
   ]
 }

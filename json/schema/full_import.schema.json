@@ -283,6 +283,11 @@
                 "maxLength": 0
               }
             ]
+          },
+          "invitecode": {
+            "type": "string",
+            "maxLength": 36,
+            "description": "This is added to the company's prefix to generate the unique registration code, optional."
           }
         }
       }
