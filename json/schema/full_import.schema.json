@@ -261,9 +261,13 @@
             "description": "Fifth custom demographic field of  the individual (unique to the organization)"
           },
           "sso": {
+            "description": "Indicates whether the user should be accessing by SSO or not",
             "type": "string",
-            "maxLength": 255,
-            "description": "Indicates whether the user should be accessing by SSO or not"
+            "enum": [
+              "",
+              "yes",
+              "no"
+            ]
           },
           "roles": {
             "type": "string",

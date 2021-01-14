@@ -34,3 +34,5 @@ work_start: xDate @optional
 otp: regex("^[a-zA-Z0-9\/\\-]*$") and length(5, 32) @optional
 // This is added to the company's prefix to generate the unique registration code
 invitecode: length(*, 36) @optional
+// Indicates whether the user should be accessing by SSO or not
+sso: is("yes") or is("no") @ignoreCase @optional
