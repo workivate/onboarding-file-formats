@@ -135,6 +135,12 @@
               }
             ]
           },
+          "roles": {
+            "type": "string",
+            "maxLength": 255,
+            "pattern": "^(admin|super_admin|user|,)*$",
+            "description": "Set of roles for user (strings comma-separated)"
+          },
           "otp": {
             "type": "string",
             "anyOf": [

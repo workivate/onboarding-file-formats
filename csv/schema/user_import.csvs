@@ -36,3 +36,5 @@ otp: regex("^[a-zA-Z0-9\/\\-]*$") and length(5, 32) @optional
 invitecode: length(*, 36) @optional
 // Indicates whether the user should be accessing by SSO or not
 sso: is("yes") or is("no") @ignoreCase @optional
+// Set of user roles, comma-separated
+roles: length(*, 255) and regex("^(admin|super_admin|user|,)*$") @optional
