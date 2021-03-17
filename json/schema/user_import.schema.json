@@ -158,6 +158,15 @@
             "type": "string",
             "maxLength": 36,
             "description": "This is added to the company's prefix to generate the unique registration code, optional."
+          },
+          "sso": {
+            "description": "Indicates whether the user should be accessing by SSO or not",
+            "type": "string",
+            "enum": [
+              "",
+              "yes",
+              "no"
+            ]
           }
         }
       }
