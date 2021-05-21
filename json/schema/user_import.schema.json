@@ -138,7 +138,7 @@
           "roles": {
             "type": "string",
             "maxLength": 255,
-            "pattern": "^(?i)(admin|super_admin|user|,)*$",
+            "pattern": "(?i)^(admin|super_admin|user|,)*$",
             "description": "Set of roles for user (strings comma-separated)"
           },
           "otp": {
