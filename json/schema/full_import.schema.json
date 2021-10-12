@@ -13,23 +13,27 @@
         "type": "object",
         "properties": {
           "company_id": {
+            "title": "Company ID",
             "description": "Internal company ID, e.g., group policy number, required if no company_internal_id.",
             "type": "string",
             "minLength": 1,
             "maxLength": 36
           },
           "company_name": {
+            "title": "Company name",
             "description": "Name of the company as it should appear on the platform, required if no company_internal_id.",
             "type": "string",
             "minLength": 1,
             "maxLength": 255
           },
           "company_internal_id": {
+            "title": "Internal company ID",
             "description": "Internal company ID.",
             "type": "string",
             "pattern": "^[0-9a-z]{24}$"
           },
           "employee_id": {
+            "title": "Employee ID",
             "description": "Unique within company, e.g., policy number. Optional if email is present.",
             "type": "string",
             "minLength": 1,
@@ -39,11 +43,13 @@
             "$ref": "#/definitions/email/rfc-5322"
           },
           "activation_date": {
+            "title": "Activation date",
             "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Required. Should be a future date.",
             "type": "string",
             "format": "date"
           },
           "termination_date": {
+            "title": "Termination date",
             "description": "Date when account should be terminated in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
             "anyOf": [
@@ -56,11 +62,13 @@
             ]
           },
           "group": {
+            "title": "Group",
             "description": "Internal group to assign the user to, for companies that organise users into groups. Optional and can be left empty if not relevant.",
             "type": "string",
             "maxLength": 255
           },
           "country_code": {
+            "title": "Country code",
             "description": "User's country, 2 letter country code, uppercase, optional.",
             "type": "string",
             "anyOf": [
@@ -73,6 +81,7 @@
             ]
           },
           "locale": {
+            "title": "User locale",
             "description": "User's locale string in ISO/IEC 15897 format, e.g., en_GB, pt_BR, etc. Optional.",
             "type": "string",
             "anyOf": [
@@ -85,18 +94,22 @@
             ]
           },
           "first_name": {
+            "title": "First Name",
             "type": "string",
             "maxLength": 255
           },
           "last_name": {
+            "title": "Last Name",
             "type": "string",
             "maxLength": 255
           },
           "job_title": {
+            "title": "Job Title",
             "type": "string",
             "maxLength": 255
           },
           "birthday": {
+            "title": "Birthday",
             "description": "User's date of birth in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
             "anyOf": [
@@ -109,6 +122,7 @@
             ]
           },
           "gender": {
+            "title": "Gender",
             "description": "Optional, can be empty or any of the following: male, female, other.",
             "type": "string",
             "enum": [
@@ -119,6 +133,7 @@
             ]
           },
           "work_start": {
+            "title": "Work start date",
             "description": "Date when the employee started working for the company in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
             "anyOf": [
@@ -131,6 +146,7 @@
             ]
           },
           "phone_mobile": {
+            "title": "Mobile phone number",
             "description": "User's mobile phone number, should be in international format, optional.",
             "allOf": [
               {
@@ -139,6 +155,7 @@
             ]
           },
           "phone_work": {
+            "title": "Work phone number",
             "description": "User's work phone number, should be in international format, optional.",
             "type": "string",
             "maxLength": 255,
@@ -149,118 +166,142 @@
             ]
           },
           "region": {
+            "title": "Region",
             "type": "string",
             "maxLength": 255,
             "description": "Region of work of the individual"
           },
           "sub_region": {
+            "title": "Sub region",
             "type": "string",
             "maxLength": 255,
             "description": "Sub region of work of the individual"
           },
           "city": {
+            "title": "City",
             "type": "string",
             "maxLength": 255,
             "description": "City of work of the individual"
           },
           "location_site": {
+            "title": "Work location/site",
             "type": "string",
             "maxLength": 255,
             "description": "Location or site out of which the individual works"
           },
           "work_status": {
+            "title": "Work status",
             "type": "string",
             "maxLength": 255,
             "description": "Work status of the individual (e.g. Active, STD, LTD, leave, terminated, etc)"
           },
           "management_status": {
+            "title": "Management status",
             "type": "string",
             "maxLength": 255,
             "description": "Designation of whether or not the person manages individuals"
           },
           "job_level": {
+            "title": "Job level",
             "type": "string",
             "maxLength": 255
           },
           "division": {
+            "title": "Division",
             "type": "string",
             "maxLength": 255,
             "description": "Highest level department/division/group of the individual"
           },
           "division_sub1": {
+            "title": "Subdivision1",
             "type": "string",
             "maxLength": 255,
             "description": "Second highest level department/division/group of the individual"
           },
           "division_sub2": {
+            "title": "Subdivision2",
             "type": "string",
             "maxLength": 255,
             "description": "Third highest level department/division/group of the individual"
           },
           "division_sub3": {
+            "title": "Subdivision3",
             "type": "string",
             "maxLength": 255,
             "description": "Fourth highest level department/division/group of the individual"
           },
           "division_sub4": {
+            "title": "Subdivision4",
             "type": "string",
             "maxLength": 255
           },
           "division_sub5": {
+            "title": "Subdivision5",
             "type": "string",
             "maxLength": 255
           },
           "occupation": {
+            "title": "Occupation",
             "type": "string",
             "maxLength": 255,
             "description": "Occupation of the individual"
           },
           "union_status": {
+            "title": "Union status",
             "type": "string",
             "maxLength": 255,
             "description": "Union status of the individual (e.g. union, non-union)"
           },
           "pay_type": {
+            "title": "Payment type",
             "type": "string",
             "maxLength": 255,
             "description": "Pay type of the individual (e.g. hourly, salary, commission)"
           },
           "salary": {
+            "title": "Salary",
             "type": "string",
             "maxLength": 255,
             "description": "Salary of the individual"
           },
           "preferred_language": {
+            "title": "Preferred language",
             "type": "string",
             "maxLength": 255,
             "description": "Preferred language of communication for the individual (e.g. English, French, German, etc)"
           },
           "custom_cut1": {
+            "title": "Custom field1",
             "type": "string",
             "maxLength": 255,
             "description": "First custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut2": {
+            "title": "Custom field2",
             "type": "string",
             "maxLength": 255,
             "description": "Second custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut3": {
+            "title": "Custom field3",
             "type": "string",
             "maxLength": 255,
             "description": "Third custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut4": {
+            "title": "Custom field4",
             "type": "string",
             "maxLength": 255,
             "description": "Fourth custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut5": {
+            "title": "Custom field5",
             "type": "string",
             "maxLength": 255,
             "description": "Fifth custom demographic field of  the individual (unique to the organization)"
           },
           "sso": {
+            "title": "SSO access",
             "description": "Indicates whether the user should be accessing by SSO or not",
             "type": "string",
             "enum": [
@@ -270,12 +311,14 @@
             ]
           },
           "roles": {
+            "title": "Roles",
             "type": "string",
             "maxLength": 255,
             "pattern": "(?i)^(admin|super_admin|user|,)*$",
             "description": "Set of roles for user (strings comma-separated)"
           },
           "otp": {
+            "title": "OTP code",
             "type": "string",
             "anyOf": [
               {
@@ -289,6 +332,7 @@
             ]
           },
           "invitecode": {
+            "title": "Invitation code",
             "type": "string",
             "maxLength": 36,
             "description": "This is added to the company's prefix to generate the unique registration code, optional."
@@ -304,6 +348,7 @@
   "definitions": {
     "email": {
       "rfc-5322": {
+        "title": "Email",
         "description": "User's email address as defined in RFC 5322, optional if employee_id is present.",
         "type": "string",
         "anyOf": [
@@ -318,6 +363,7 @@
       }
     },
     "phoneNumber": {
+      "title": "Phone number",
       "type": "string",
       "maxLength": 255,
       "pattern": "^[0-9 +()x./-]*$"

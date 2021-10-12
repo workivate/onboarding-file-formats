@@ -13,6 +13,7 @@
         "type": "object",
         "properties": {
           "employee_id": {
+            "title": "Employee ID",
             "description": "Unique within company, e.g., policy number. Required if this feature is enabled for the company.",
             "type": "string",
             "maxLength": 36
@@ -21,6 +22,7 @@
             "$ref": "#/definitions/email/rfc-5322"
           },
           "activation_date": {
+            "title": "Activation date",
             "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
             "anyOf": [
@@ -33,6 +35,7 @@
             ]
           },
           "termination_date": {
+            "title": "Termination date",
             "description": "Date when account should be terminated in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
             "anyOf": [
@@ -45,11 +48,13 @@
             ]
           },
           "group": {
+            "title": "Group",
             "description": "Internal group to assign the user to, for companies that organise users into groups. Optional and can be left empty if not relevant.",
             "type": "string",
             "maxLength": 255
           },
           "country_code": {
+            "title": "Country code",
             "description": "User's country, 2 letter country code, uppercase, optional.",
             "type": "string",
             "anyOf": [
@@ -62,6 +67,7 @@
             ]
           },
           "locale": {
+            "title": "User locale",
             "description": "User's locale string in ISO/IEC 15897 format, e.g., en_GB, pt_BR, etc. Optional.",
             "type": "string",
             "anyOf": [
@@ -74,18 +80,22 @@
             ]
           },
           "first_name": {
+            "title": "First name",
             "type": "string",
             "maxLength": 255
           },
           "last_name": {
+            "title": "Last name",
             "type": "string",
             "maxLength": 255
           },
           "job_title": {
+            "title": "Job title",
             "type": "string",
             "maxLength": 255
           },
           "birthday": {
+            "title": "Birthday",
             "description": "User's date of birth in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
             "anyOf": [
@@ -98,6 +108,7 @@
             ]
           },
           "gender": {
+            "title": "Gender",
             "description": "Optional, can be empty or any of the following: male, female, other.",
             "type": "string",
             "enum": [
@@ -108,6 +119,7 @@
             ]
           },
           "work_start": {
+            "title": "Work start date",
             "description": "Date when the employee started working for the company in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
             "type": "string",
             "anyOf": [
@@ -120,6 +132,7 @@
             ]
           },
           "phone_mobile": {
+            "title": "Mobile phone number",
             "description": "User's mobile phone number, should be in international format, optional.",
             "allOf": [
               {
@@ -128,6 +141,7 @@
             ]
           },
           "phone_work": {
+            "title": "Work phone number",
             "description": "User's work phone number, should be in international format, optional.",
             "allOf": [
               {
@@ -136,12 +150,14 @@
             ]
           },
           "roles": {
+            "title": "Roles",
             "type": "string",
             "maxLength": 255,
             "pattern": "(?i)^(admin|super_admin|user|,)*$",
             "description": "Set of roles for user (strings comma-separated)"
           },
           "otp": {
+            "title": "OTP code",
             "type": "string",
             "anyOf": [
               {
@@ -155,11 +171,13 @@
             ]
           },
           "invitecode": {
+            "title": "Invitation code",
             "type": "string",
             "maxLength": 36,
             "description": "This is added to the company's prefix to generate the unique registration code, optional."
           },
           "sso": {
+            "title": "SSO access",
             "description": "Indicates whether the user should be accessing by SSO or not",
             "type": "string",
             "enum": [
@@ -179,6 +197,7 @@
   "definitions": {
     "email": {
       "rfc-5322": {
+        "title": "Email",
         "description": "User's email address as defined in RFC 5322, optional if the company uses employee_id.",
         "type": "string",
         "anyOf": [
@@ -193,6 +212,7 @@
       }
     },
     "phoneNumber": {
+      "title": "Phone number",
       "type": "string",
       "maxLength": 255,
       "pattern": "^[0-9 +()x./-]*$"
