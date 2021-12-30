@@ -213,30 +213,30 @@
             "description": "Highest level department/division/group of the individual"
           },
           "division_sub1": {
-            "title": "Subdivision1",
+            "title": "Subdivision 1",
             "type": "string",
             "maxLength": 255,
             "description": "Second highest level department/division/group of the individual"
           },
           "division_sub2": {
-            "title": "Subdivision2",
+            "title": "Subdivision 2",
             "type": "string",
             "maxLength": 255,
             "description": "Third highest level department/division/group of the individual"
           },
           "division_sub3": {
-            "title": "Subdivision3",
+            "title": "Subdivision 3",
             "type": "string",
             "maxLength": 255,
             "description": "Fourth highest level department/division/group of the individual"
           },
           "division_sub4": {
-            "title": "Subdivision4",
+            "title": "Subdivision 4",
             "type": "string",
             "maxLength": 255
           },
           "division_sub5": {
-            "title": "Subdivision5",
+            "title": "Subdivision 5",
             "type": "string",
             "maxLength": 255
           },
@@ -271,31 +271,31 @@
             "description": "Preferred language of communication for the individual (e.g. English, French, German, etc)"
           },
           "custom_cut1": {
-            "title": "Custom field1",
+            "title": "Custom field 1",
             "type": "string",
             "maxLength": 255,
             "description": "First custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut2": {
-            "title": "Custom field2",
+            "title": "Custom field 2",
             "type": "string",
             "maxLength": 255,
             "description": "Second custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut3": {
-            "title": "Custom field3",
+            "title": "Custom field 3",
             "type": "string",
             "maxLength": 255,
             "description": "Third custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut4": {
-            "title": "Custom field4",
+            "title": "Custom field 4",
             "type": "string",
             "maxLength": 255,
             "description": "Fourth custom demographic field of  the individual (unique to the organization)"
           },
           "custom_cut5": {
-            "title": "Custom field5",
+            "title": "Custom field 5",
             "type": "string",
             "maxLength": 255,
             "description": "Fifth custom demographic field of  the individual (unique to the organization)"
