@@ -1,14 +1,32 @@
 # LifeWorks Automated Onboarding - Supported File formats
 
-The purpose of this repository is to provide assistance for producing valid input files for the onboarding process in a number of different formats. 
+## Purpose
+Few file types can be used by clients to upload user and/or company data:  
+ - companies data (originator upload) --> supported via SFTP
+ - companies + users data --> supported via SFTP
+ - users data --> supported via Admin-Panel (Zeus) and SFTP
 
-Currently we only support the Comma-separated values (CSV) format. You can access schemas and example files [here](csv/).
+File schemas are defined in this repository:  
+ - `full_import.schema.json` --> used by SFTP uploads
+ - `user_import.schema.json` --> used by FFU uploads (Full File Uploads via Admin-Panel / Zeus)  
+
+File schemas are used to validate field names and record values of uploaded files.
+
+Note: .csv schemas are prepared, but not currently in use by the onboarding apps
+
+
+## Supported file formats
+Onboarding pipeline supports file formats:
+ - `csv` / `tsv` --> comma / tab separated values as text files
+ - `xls` / `xlsx` --> excel files
+
+You can access schemas and example files [here](json/).
   
-There is an explanation on what fields to use with what kind of contents, as well as examples, and schemas to validate an input file against. Although it is not guaranteed that an input file that is valid against the correct schema will be imported without errors, the schema validation can eliminate the vast majority of the potential errors so it could be a helpful part of the process.
+Fields description, examples and validation rules are below. Passed validation of field names and file records doesn't guarantee successful import, but it eliminates the vast majority of potential user errors.
 
 ## File requirements
-* All files regardless of the file format must be UTF-8 encoded
-* Files must have `.csv` extension indicating their format
+* Text files should be either encoded in UTF-8 / UTF-16 or use only English characters with ANSI encoding
+* Files must have `.csv` / `.tsv` / `.xls` / `.xlsx` extension indicating their format
 * File should always contain ALL user records (including inactive/terminated users)
 * Files should be added as new files and should not overwrite existing files held on the SFTP, therefore we recommend using a date & timestamp in the filename generation process
 
