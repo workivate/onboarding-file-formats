@@ -84,4 +84,4 @@ roles: length(*, 255) and regex("^(admin|super_admin|user|,)*$") @ignoreCase @op
 // One time password, provided by employer, which later has to be verified by employee
 otp: regex("^[a-zA-Z0-9\/\\-]*$") and length(5, 32) @optional
 // This is added to the company's prefix to generate the unique registration code
-invitecode: length(*, 36) @optional
+invitecode: @optional
