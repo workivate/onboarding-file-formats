@@ -33,7 +33,7 @@ work_start: xDate @optional
 // One time password, provided by employer, which later has to be verified by employee
 otp: regex("^[a-zA-Z0-9\/\\-]*$") and length(5, 32) @optional
 // This is added to the company's prefix to generate the unique registration code
-invitecode: length(*, 36) @optional
+invitecode: @optional
 // Indicates whether the user should be accessing by SSO or not
 sso: is("yes") or is("no") @ignoreCase @optional
 // Set of user roles, comma-separated
