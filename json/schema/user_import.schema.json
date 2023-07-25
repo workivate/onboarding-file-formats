@@ -184,6 +184,16 @@
               "yes",
               "no"
             ]
+          },
+          "telemed_eligible": {
+            "title": "Telemed Eligibitliy",
+            "description": "Indicates whether the user can have telemed or not",
+            "type": "string",
+            "enum": [
+              "",
+              "yes",
+              "no"
+            ]
           }
         }
       }

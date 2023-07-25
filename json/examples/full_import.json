@@ -41,7 +41,8 @@
       "custom_cut4": "",
       "custom_cut5": "",
       "sso": "",
-      "invitecode": "1#801011"
+      "invitecode": "1#801011",
+      "telemed_eligible": ""
     },
     {
       "company_id": "CP1",
@@ -84,7 +85,8 @@
       "custom_cut4": "",
       "custom_cut5": "",
       "sso": "",
-      "invitecode": "2#801011"
+      "invitecode": "2#801011",
+      "telemed_eligible": "yes"
     },
     {
       "company_id": "CP1",
@@ -125,7 +127,8 @@
       "custom_cut4": "",
       "custom_cut5": "",
       "sso": "",
-      "invitecode": "3#190930"
+      "invitecode": "3#190930",
+      "telemed_eligible": "no"
     },
     {
       "email": "email@fallback.test",
@@ -167,7 +170,8 @@
       "custom_cut4": "",
       "custom_cut5": "",
       "sso": "",
-      "invitecode": "#890703"
+      "invitecode": "#890703",
+      "telemed_eligible": ""
     }
   ]
 }
