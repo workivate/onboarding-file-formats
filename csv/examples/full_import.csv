@@ -1,6 +1,6 @@
-company_id,company_name,employee_id,email,first_name,last_name,activation_date,termination_date,country_code,locale,job_title,group,gender,phone_mobile,phone_work,birthday,work_start,region,sub_region,city,location_site,work_status,management_status,job_level,division,division_sub1,division_sub2,division_sub3,division_sub4,division_sub5,occupation,union_status,pay_type,salary,preferred_language,custom_cut1,custom_cut2,custom_cut3,custom_cut4,custom_cut5,sso,roles,invitecode
-c1,Company 1,e1,test1@example.com,Jane,Doe,2018-12-01,2019-12-01,GB,en_GB,Director,EU,female,1234567890,1234567891,1919-09-30,2011-12-19,,,,,,,,,,,,,,,,,,,,,,,,"user,admin,super_admin",,e1/190930
-c1,Company 1,e2,test.email2+xxxx1@example.com.anytld,John,Doe,2018-12-01,,US,en_US,Director,US-East,male,555-1234-567890,555-1234-567891,1919-09-30,2011-12-19,Test Region,,Test City,,,,,,,,,,,,,,,,,,,,,,user,e2/190930
-c2,Company 2,e1,test3@example.hu,János,Kovács,2018-12-01,2027-01-01,HU,hu_HU,,,other,,,0000-07-31,2017-01-01,,,,,,,,,,,,,,,,,,,,,,,,,"user",e1/000731
-c2,Company 2,e3,Test4@EXAMPLE.COM,,,2018-12-01,,GB,en_GB,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"user,admin,",e3/00
-c2,Company 2,,test5@example.com,,,2018-12-01,,GB,en_US,,,,,,,,,,"Test City",,,,,,,,,,,,,,,,,,,,,,,0/00
+company_id,company_name,employee_id,email,first_name,last_name,activation_date,termination_date,country_code,locale,job_title,group,gender,phone_mobile,phone_work,birthday,work_start,region,sub_region,city,location_site,work_status,management_status,job_level,division,division_sub1,division_sub2,division_sub3,division_sub4,division_sub5,occupation,union_status,pay_type,salary,preferred_language,custom_cut1,custom_cut2,custom_cut3,custom_cut4,custom_cut5,sso,roles,invitecode,telemed_eligible
+c1,Company 1,e1,test1@example.com,Jane,Doe,2018-12-01,2019-12-01,GB,en_GB,Director,EU,female,1234567890,1234567891,1919-09-30,2011-12-19,,,,,,,,,,,,,,,,,,,,,,,,"user,admin,super_admin",,e1/190930,
+c1,Company 1,e2,test.email2+xxxx1@example.com.anytld,John,Doe,2018-12-01,,US,en_US,Director,US-East,male,555-1234-567890,555-1234-567891,1919-09-30,2011-12-19,Test Region,,Test City,,,,,,,,,,,,,,,,,,,,,,user,e2/190930,yes
+c2,Company 2,e1,test3@example.hu,János,Kovács,2018-12-01,2027-01-01,HU,hu_HU,,,other,,,0000-07-31,2017-01-01,,,,,,,,,,,,,,,,,,,,,,,,,"user",e1/000731,no
+c2,Company 2,e3,Test4@EXAMPLE.COM,,,2018-12-01,,GB,en_GB,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"user,admin,",e3/00,
+c2,Company 2,,test5@example.com,,,2018-12-01,,GB,en_US,,,,,,,,,,"Test City",,,,,,,,,,,,,,,,,,,,,,,0/00,no

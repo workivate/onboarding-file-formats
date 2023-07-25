@@ -335,6 +335,16 @@
             "title": "Invitation code",
             "type": "string",
             "description": "This is added to the company's prefix to generate the unique registration code, optional."
+          },
+          "telemed_eligible": {
+            "title": "Telemed Eliigibility",
+            "description": "Indicates whether the user can have telemed or not",
+            "type": "string",
+            "enum": [
+              "",
+              "yes",
+              "no"
+            ]
           }
         }
       }

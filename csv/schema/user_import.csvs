@@ -38,3 +38,5 @@ invitecode: @optional
 sso: is("yes") or is("no") @ignoreCase @optional
 // Set of user roles, comma-separated
 roles: length(*, 255) and regex("^(admin|super_admin|user|,)*$") @ignoreCase @optional
+// Indicates whether user is telemed elegible after onboarding or not, defaults to not.
+telemed_elegile: is("yes") or is("no") @ignoreCase @optional
