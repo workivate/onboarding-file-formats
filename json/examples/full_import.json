@@ -42,7 +42,8 @@
       "custom_cut5": "",
       "sso": "",
       "invitecode": "1#801011",
-      "telemed_eligible": ""
+      "telemed_eligible": "",
+      "company_type": "Embedded"
     },
     {
       "company_id": "CP1",
@@ -86,7 +87,8 @@
       "custom_cut5": "",
       "sso": "",
       "invitecode": "2#801011",
-      "telemed_eligible": "yes"
+      "telemed_eligible": "yes",
+      "company_type": ""
     },
     {
       "company_id": "CP1",
@@ -128,7 +130,8 @@
       "custom_cut5": "",
       "sso": "",
       "invitecode": "3#190930",
-      "telemed_eligible": "no"
+      "telemed_eligible": "no",
+      "company_type": "Non EAP"
     },
     {
       "email": "email@fallback.test",
@@ -171,7 +174,8 @@
       "custom_cut5": "",
       "sso": "",
       "invitecode": "#890703",
-      "telemed_eligible": ""
+      "telemed_eligible": "",
+      "company_type": ""
     }
   ]
 }
