@@ -87,3 +87,5 @@ otp: regex("^[a-zA-Z0-9\/\\-]*$") and length(5, 32) @optional
 invitecode: @optional
 // Indicates whether user is telemed elegible after onboarding or not, defaults to not.
 telemed_elegile: is("yes") or is("no") @ignoreCase @optional
+// Company type: Type of company it is (optional)
+company_type: length(*, 255) @optional

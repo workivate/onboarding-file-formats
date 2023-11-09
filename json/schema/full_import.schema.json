@@ -345,6 +345,12 @@
               "yes",
               "no"
             ]
+          },
+          "company_type": {
+            "title": "Company Type",
+            "description": "Describes the type of company it is (optional)",
+            "type": "string",
+            "maxLength": 255
           }
         }
       }
