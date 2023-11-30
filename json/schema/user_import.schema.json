@@ -194,6 +194,21 @@
               "yes",
               "no"
             ]
+          },
+          "authentication_id": {
+            "title": "Authentication Id",
+            "description": "Additional internal user ID, potentially used for reporting (optional)",
+            "type": "string",
+            "anyOf": [
+              {
+                "maxLength": 36,
+                "minLength": 1,
+                "pattern": "^[a-zA-Z0-9\/\\-]*$"
+              },
+              {
+                "maxLength": 0
+              }
+            ]
           }
         }
       }

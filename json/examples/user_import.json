@@ -17,7 +17,8 @@
       "phone_work": "+441234567891",
       "invitecode": "1#801011",
       "sso": "yes",
-      "telemed_eligible": "yes"
+      "telemed_eligible": "yes",
+      "authentication_id": ""
     },
     {
       "employee_id": "2",
@@ -36,7 +37,8 @@
       "termination_date": "2020-10-11",
       "invitecode": "2#801011",
       "sso": "no",
-      "telemed_eligible": "no"
+      "telemed_eligible": "no",
+      "authentication_id": "1234acbd"
     },
     {
       "employee_id": "3",
@@ -53,7 +55,8 @@
       "activation_date": "2000-10-11",
       "invitecode": "3#190930",
       "sso": "",
-      "telemed_eligible": ""
+      "telemed_eligible": "",
+      "authentication_id": "auth12345"
     }
   ]
 }

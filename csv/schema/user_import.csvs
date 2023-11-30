@@ -40,3 +40,5 @@ sso: is("yes") or is("no") @ignoreCase @optional
 roles: length(*, 255) and regex("^(admin|super_admin|user|,)*$") @ignoreCase @optional
 // Indicates whether user is telemed elegible after onboarding or not, defaults to not.
 telemed_elegile: is("yes") or is("no") @ignoreCase @optional
+// Additional internal user ID, potentially used for reporting (optional)
+authentication_id: regex("^[a-zA-Z0-9\/\\-]*$") and length(0, 36) @optional
