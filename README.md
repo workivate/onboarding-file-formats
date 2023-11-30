@@ -80,6 +80,7 @@ Fields description, examples and validation rules are below. Passed validation o
  invitecode         | This is added to the company's prefix to generate the unique registration code. | Text                                                          | example@code                                                               | False                                | False                                | DO NOT include the registration code prefix!                              
  telemed_eligible   | Indicates whether the user can have telemed or not                              | Choice: yes, no                                               | yes                                                                        | False                                | False                                |
  company_type       | Describes the type of company it is (optional)                                  | Text, Max length 255                                          | Non EAP, Endorsed, Embedded, etc                                           | True                                 | False                                | Originators who want to use this are free to set their own labels
+ authentication_id  | Additional internal user ID, potentially used for reporting (optional)          | Text, Max length 36                                           | "123abc", Any string                                                       | False                                | False                                | 
 
 
 ### Activation and termination dates
