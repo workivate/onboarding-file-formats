@@ -91,3 +91,5 @@ telemed_elegile: is("yes") or is("no") @ignoreCase @optional
 company_type: length(*, 255) @optional
 // Additional internal user ID, potentially used for reporting (optional)
 authentication_id: regex("^[a-zA-Z0-9\/\\-]*$") and length(0, 36) @optional
+// Restricted Access: Indicates whether the users from outside of a given region should be restricted from accessing the platform
+restricted_access: is("yes") or is("no") @ignoreCase @optional

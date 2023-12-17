@@ -81,6 +81,7 @@ Fields description, examples and validation rules are below. Passed validation o
  telemed_eligible   | Indicates whether the user can have telemed or not                              | Choice: yes, no                                               | yes                                                                        | False                                | False                                |
  company_type       | Describes the type of company it is (optional)                                  | Text, Max length 255                                          | Non EAP, Endorsed, Embedded, etc                                           | True                                 | False                                | Originators who want to use this are free to set their own labels
  authentication_id  | Additional internal user ID, potentially used for reporting (optional)          | Text, Max length 36                                           | "123abc", Any string                                                       | False                                | False                                | 
+ restricted_access                | Indicates whether the users from outside of a given region should be restricted from accessing the platform                    | Choice: yes, no                                               | yes                                                                        | False                                | False                                |                              
 
 
 ### Activation and termination dates
