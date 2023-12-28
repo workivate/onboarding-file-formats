@@ -366,6 +366,16 @@
                 "maxLength": 0
               }
             ]
+          },
+          "restricted_access": {
+            "title": "Restricted Access",
+            "description": "Indicates whether the users from outside of a given region should be restricted from accessing the platform",
+            "type": "string",
+            "enum": [
+              "",
+              "yes",
+              "no"
+            ]
           }
         }
       }
