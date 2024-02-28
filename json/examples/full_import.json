@@ -44,7 +44,8 @@
       "invitecode": "1#801011",
       "telemed_eligible": "",
       "company_type": "Embedded",
-      "authentication_id": "8000"
+      "authentication_id": "8000",
+      "policy_id": "1234"
     },
     {
       "company_id": "CP1",
@@ -90,7 +91,8 @@
       "invitecode": "2#801011",
       "telemed_eligible": "yes",
       "company_type": "",
-      "authentication_id": ""
+      "authentication_id": "",
+      "policy_id": ""
     },
     {
       "company_id": "CP1",
@@ -134,7 +136,8 @@
       "invitecode": "3#190930",
       "telemed_eligible": "no",
       "company_type": "Non EAP",
-      "authentication_id": "loremipsumdolorsitametconsecte123456"
+      "authentication_id": "loremipsumdolorsitametconsecte123456",
+      "policy_id": "1234abcd"
     },
     {
       "email": "email@fallback.test",
@@ -179,7 +182,8 @@
       "invitecode": "#890703",
       "telemed_eligible": "",
       "company_type": "",
-      "authentication_id": ""
+      "authentication_id": "",
+      "policy_id": ""
     }
   ]
 }

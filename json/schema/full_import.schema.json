@@ -376,6 +376,12 @@
               "yes",
               "no"
             ]
+          },
+          "policy_id": {
+            "title": "Policy ID",
+            "description": "Additional company field that can be used to group companies(optional)",
+            "type": "string",
+            "maxLength": 255
           }
         }
       }
