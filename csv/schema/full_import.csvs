@@ -93,3 +93,5 @@ company_type: length(*, 255) @optional
 authentication_id: regex("^[a-zA-Z0-9\/\\-]*$") and length(0, 36) @optional
 // Restricted Access: Indicates whether the users from outside of a given region should be restricted from accessing the platform
 restricted_access: is("yes") or is("no") @ignoreCase @optional
+// Additional company field that can be used to group companies (optional)
+policy_id: length(0, 255) @optional
