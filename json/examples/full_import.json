@@ -1,5 +1,5 @@
 {
-  "$schema": "https://lifeworks.com/onboarding/json/v1/full_import.schema.json",
+  "$schema": "https://telus.com/onboarding/json/v1/full_import.schema.json",
   "users": [
     {
       "company_id": "CP1",
