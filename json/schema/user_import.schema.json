@@ -1,5 +1,5 @@
 {
-  "$id": "https://lifeworks.com/onboarding/json/v1/user_import.schema.json",
+  "$id": "https://telus.com/onboarding/json/v1/user_import.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "description": "Schema for a user data JSON file to upload through the admin panel.",
   "type": "object",

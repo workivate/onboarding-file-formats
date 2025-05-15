@@ -1,4 +1,4 @@
-# LifeWorks Automated Onboarding - Supported File formats
+# Telus Health Automated Onboarding - Supported File formats
 
 ## Purpose
 Few file types can be used by clients to upload user and/or company data:

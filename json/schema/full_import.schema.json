@@ -1,5 +1,5 @@
 {
-  "$id": "https://lifeworks.com/onboarding/json/v1/full_import.schema.json",
+  "$id": "https://telus.com/onboarding/json/v1/full_import.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "description": "Schema for a single onboarding JSON file that contains all users within all companies on the platform.",
   "type": "object",
