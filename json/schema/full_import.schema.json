@@ -42,12 +42,6 @@
           "email": {
             "$ref": "#/definitions/email/rfc-5322"
           },
-          "activation_date": {
-            "title": "Activation date",
-            "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Required. Should be a future date.",
-            "type": "string",
-            "format": "date"
-          },
           "termination_date": {
             "title": "Termination date",
             "description": "Date when account should be terminated in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
@@ -365,16 +359,6 @@
               {
                 "maxLength": 0
               }
-            ]
-          },
-          "restricted_access": {
-            "title": "Restricted Access",
-            "description": "Indicates whether the users from outside of a given region should be restricted from accessing the platform",
-            "type": "string",
-            "enum": [
-              "",
-              "yes",
-              "no"
             ]
           },
           "policy_id": {

@@ -21,19 +21,6 @@
           "email": {
             "$ref": "#/definitions/email/rfc-5322"
           },
-          "activation_date": {
-            "title": "Activation date",
-            "description": "Date when account should become active in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",
-            "type": "string",
-            "anyOf": [
-              {
-                "format": "date"
-              },
-              {
-                "maxLength": 0
-              }
-            ]
-          },
           "termination_date": {
             "title": "Termination date",
             "description": "Date when account should be terminated in ISO 8601 format, i.e., YYYY-MM-DD. Optional.",

@@ -13,8 +13,6 @@ email: regex("^[\w!#$%&’*+/=?`{|}~^-]+(?:\.[\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-z
 first_name: length(*, 255) @optional
 last_name: length(*, 255) @optional
 // The dates must all be in ISO 8601 format (date part only), i.e., YYYY-MM-DD.
-// Activation date: when to activate the user's access, optional.
-activation_date: xDate @optional
 // Termination date: when to terminate the users's access, optional.
 termination_date: xDate @optional
 // Country code: user's country, 2 letter country code, uppercase, optional.
@@ -91,7 +89,5 @@ telemed_elegile: is("yes") or is("no") @ignoreCase @optional
 company_type: length(*, 255) @optional
 // Additional internal user ID, potentially used for reporting (optional)
 authentication_id: regex("^[a-zA-Z0-9\/\\-]*$") and length(0, 36) @optional
-// Restricted Access: Indicates whether the users from outside of a given region should be restricted from accessing the platform
-restricted_access: is("yes") or is("no") @ignoreCase @optional
 // Additional company field that can be used to group companies (optional)
 policy_id: length(0, 255) @optional
